@@ -10,13 +10,17 @@ html, body {
   height: 100%;
 }
 
+img {
+	width: 100%;
+}
+
 body {
 	font-family: Erode;
 	display: flex;
 	flex-direction: column;
 	margin: 0;
-	background: #222831;
-	color: #EEEEEE;
+	background: #F5C45E;
+	color: #102E50;
 }
 
 .container {
@@ -35,12 +39,12 @@ header {
 	margin: 0 auto 2rem;
 }
 
-time, .tags {
+time, .tag {
 	font-family: monospace;
 }
 
 a {
-	color: #009dff;
+	color: #BE3D2A;
 }
 
 a:hover {
@@ -48,7 +52,7 @@ a:hover {
 }
 
 a:visited {
-	color: #a87ccf;
+	color: #7B1781;
 }
 
 .post {
@@ -57,7 +61,7 @@ a:visited {
 	padding-bottom: 2rem;
 }
 
-.tags {
+.tag {
 	margin-right: 1rem;
 	padding: 0.125rem 0.5rem;
 	background: #b1bac9;
@@ -65,25 +69,35 @@ a:visited {
 	border-radius: 9px;
 }
 
-.tags a {
+.tag a {
 	color: #;
 }
 
+.tags {
+	display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.75rem;
+}
+
 footer {
-	background: #76abae;
+	background: #102E50;
 	padding: 2rem;
 	flex-shrink: 0;
 }
 
 .page-links {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 }
 
-footer p, footer a, .tags a {
+footer p, footer a {
+	color: #F5C45E;
+}
+
+.tag a {
 	color: #222831;
 }
 
 footer a:visited {
-	color: #31363f;
+	color: white;
 }

@@ -1,6 +1,6 @@
 ---
-title: 'This site looks good on mobile'
-pubDate: '24 May 2025'
+title: This site looks good on mobile
+pubDate: 24 May 2025 21:00
 tags:
   - web design
 ---

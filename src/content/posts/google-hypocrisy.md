@@ -1,6 +1,6 @@
 ---
 title: Google hypocrisy
-pubDate: 24 May 2025
+pubDate: 24 May 2025 18:00
 tags:
   - google
   - seo

@@ -1,6 +1,6 @@
 ---
-title: 'Britain'
-pubDate: '24 May 2025'
+title: Britain
+pubDate: 24 May 2025 14:00
 tags:
   - racism
   - britain

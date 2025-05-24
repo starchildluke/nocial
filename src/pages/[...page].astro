@@ -18,13 +18,13 @@ const { page } = Astro.props;
 
 ---
 
-<Layout title="Nocial">
+<Layout title="Emptygold" description="Blogging—it's a personal thing.">
 	    <main>
 	    	{page.data.map((post) => (
 	    	      <div class="post">
 	    	      	<Fragment set:html={post.rendered.html}/>
 	    	      <a href=`/posts/${post.id}/`><FormattedDate date={post.data.pubDate} /></a>
-	    	      <p>{(post.data.tags ? post.data.tags.flatMap((tag: string) => <span class="tags"><a href=`/tags/${tag}/`>#{tag}</a></span>) : "")}</p>
+	    	      <p class="tags">{(post.data.tags ? post.data.tags.flatMap((tag: string) => <span class="tag"><a href=`/tags/${tag}/`>#{tag}</a></span>) : "")}</p>
 	    	      </div>
 	    	    ))}
 	    </main>
