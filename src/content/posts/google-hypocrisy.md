@@ -2,9 +2,9 @@
 title: Google hypocrisy
 pubDate: 24 May 2025
 tags:
-  - Google
-  - SEO
-  - AI
+  - google
+  - seo
+  - ai
   - tech
 ---
 

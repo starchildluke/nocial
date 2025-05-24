@@ -1,6 +1,5 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Logo from '../../components/Logo.svg';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { getCollection } from 'astro:content';
 
@@ -33,8 +32,8 @@ const { tag } = Astro.params;
 	    {posts.map((post) => (
 	      <div class="post">
 	      	<Fragment set:html={post.rendered.html}/>
-	      <a href=`/posts/${post.id}`><FormattedDate date={post.data.pubDate} /></a>
-	      <p>{(post.data.tags ? post.data.tags.flatMap((tag: string) => <span class="tags"><a href=`/tags/${tag}`>#{tag}</a></span>) : "")}</p>
+	      <a href=`/posts/${post.id}/`><FormattedDate date={post.data.pubDate} /></a>
+	      <p>{(post.data.tags ? post.data.tags.flatMap((tag: string) => <span class="tags"><a href=`/tags/${tag}/`>#{tag}</a></span>) : "")}</p>
 	      </div>
 	    ))}
 	</Layout>

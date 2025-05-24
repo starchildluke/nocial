@@ -1,9 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Logo from '../components/Logo.svg';
 import FormattedDate from '../components/FormattedDate.astro';
 import Pagination from '../components/Pagination.astro';
-import { type CollectionEntry, getCollection } from 'astro:content';
+import { getCollection } from 'astro:content';
 
 export async function getStaticPaths({paginate}) {
   const allPosts = await getCollection('posts');
@@ -23,8 +22,8 @@ const { page } = Astro.props;
 	    {page.data.map((post) => (
 	      <div class="post">
 	      	<Fragment set:html={post.rendered.html}/>
-	      <a href=`/posts/${post.id}`><FormattedDate date={post.data.pubDate} /></a>
-	      <p>{(post.data.tags ? post.data.tags.flatMap((tag: string) => <span class="tags"><a href=`/tags/${tag}`>#{tag}</a></span>) : "")}</p>
+	      <a href=`/posts/${post.id}/`><FormattedDate date={post.data.pubDate} /></a>
+	      <p>{(post.data.tags ? post.data.tags.flatMap((tag: string) => <span class="tags"><a href=`/tags/${tag}/`>#{tag}</a></span>) : "")}</p>
 	      </div>
 	    ))}
 
