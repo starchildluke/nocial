@@ -1,0 +1,83 @@
+@font-face {
+	font-family: Erode;
+	src: url("/fonts/Erode.woff2")
+		format("woff2");
+	font-weight: 400;
+	font-display: swap;
+}
+
+body {
+	min-height: 100%;
+	font-family: Erode;
+	margin: 0;
+	background: #222831;
+	color: #EEEEEE;
+}
+
+.container {
+	display: flex;
+	margin: 2rem auto;
+	max-width: 26.25rem;
+	align-content: center;
+	height: 100vh;
+	flex-direction: column;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto 2rem;
+}
+
+time, .tags {
+	font-family: monospace;
+}
+
+a {
+	color: #009dff;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:visited {
+	color: #a87ccf;
+}
+
+.post {
+	border-bottom: 1px dashed #76abae;
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+}
+
+.tags {
+	margin-right: 1rem;
+	padding: 0.125rem 0.5rem;
+	background: #b1bac9;
+	color: #404040;
+	border-radius: 9px;
+}
+
+.tags a {
+	color: #;
+}
+
+footer {
+	background: #76abae;
+	padding: 2rem;
+}
+
+.page-links {
+	display: flex;
+	justify-content: center;
+}
+
+footer p, footer a, .tags a {
+	color: #222831;
+}
+
+footer a:visited {
+	color: #31363f;
+}

@@ -1,0 +1,40 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Logo from '../../components/Logo.svg';
+import FormattedDate from '../../components/FormattedDate.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('posts');
+  const sortedPosts = allPosts.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
+  const allTags = new Set();
+  sortedPosts.map(post => {
+      post.data.tags && post.data.tags.map(tag => allTags.add(tag))
+  })
+
+  return Array.from(allTags).map((tag) => {
+    const filteredPosts = sortedPosts.filter((post) => post.data.tags.includes(tag))
+    return {
+      params: { tag },
+      props: {
+        posts: filteredPosts
+      }
+    };
+  });
+}
+
+const { posts } = Astro.props;
+const { tag } = Astro.params;
+
+---
+
+<Layout title={tag + " tag page"}>
+	<h1>{tag}</h1>
+	    {posts.map((post) => (
+	      <div class="post">
+	      	<Fragment set:html={post.rendered.html}/>
+	      <a href=`/posts/${post.id}`><FormattedDate date={post.data.pubDate} /></a>
+	      <p>{(post.data.tags ? post.data.tags.flatMap((tag: string) => <span class="tags"><a href=`/tags/${tag}`>#{tag}</a></span>) : "")}</p>
+	      </div>
+	    ))}
+	</Layout>

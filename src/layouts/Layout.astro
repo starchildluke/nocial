@@ -1,22 +1,30 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Logo from '../components/Logo.svg';
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: string;
+  canonicalURL: string | URL;
+  url: string | URL;
+}
+
+const { title, description, pubDate, canonicalURL = Astro.url } = Astro.props;
+
+---
+<html lang="en-GB">
+  <BaseHead {title} {description} {canonicalURL} />
+  <div class="container">
+  <body>
+  	<header>
+		<a href="/"><img src="/favicon.png" width="64" loading="eager" /></a>
+			<Logo />
+	</header>
+      <slot />
+  </body>
+</div>
+<Footer />
+</html>
