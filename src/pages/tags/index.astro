@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('posts');
+const filteredPosts = allPosts.map((post) => (
+	post.data.tags
+	)).flat();
+const processedTags: any = filteredPosts.reduce((acc, tag) => {
+	const value = acc[tag] || 0;
+	return {
+		...acc,
+		[tag]: value + 1
+	}
+}, {})
+const allTags: any = [...new Set(allPosts.map((post: any) => post.data.tags).flat())];
+const sortedTags = allTags.sort()
+
+const title = "Tag Index";
+---
+
+<Layout title={title}>
+	<h1>{title}</h1>
+  <ul>
+  	{sortedTags.map((tag) =>
+  		<li>
+  			<a href=`/tags/${tag}/`>{tag}</a> ({processedTags[tag]})
+  		</li>
+  	)}
+  </ul>
+</Layout>

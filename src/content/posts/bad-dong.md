@@ -1,8 +1,7 @@
 ---
 title: "Bad dong"
 pubDate: 2023-05-18
-tags: 
-  - "bad dong"
+tags:
   - "memes"
   - "video"
 ---

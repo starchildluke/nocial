@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection("posts");
+const allPages = Object.values(import.meta.glob('../pages/*.astro', { eager: true }))
+const realPagesOnly = allPages.filter(page => !page.url.includes("["));
+
+---
+<Layout>
+  <h1>Sitemap</h1>
+  <h2>Posts</h2>
+  <ul>
+    {allPosts.map((post) => 
+      <li><a href=`/posts/${post.id}/`><Fragment set:html={post.data.title}/></a></li>)
+    }
+  </ul>
+  <h2>Pages</h2>
+  <ul>
+    {realPagesOnly.map((page) => 
+      <li><a href={page.url}>{page.url}</a></li>)
+    }
+  </ul>
+</Layout>

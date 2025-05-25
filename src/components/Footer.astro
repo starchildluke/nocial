@@ -1,6 +1,11 @@
 ---
+const allPages = Object.values(import.meta.glob('../pages/*.astro', { eager: true }))
+const realPagesOnly = allPages.filter(page => !page.url.includes("["));
 ---
 <footer>
-	<p>Nocial is a personal project by Luke Davis.</p>
+	<p>Pages: {realPagesOnly.map((page) => (
+		<span><a href={page.url}>{page.url}</a> </span>
+		))} <span><a href="/tags/">/tags/</a> </span></p>
+	<p>Emptygold is a personal project by Luke Davis.</p>
 	<p><a href="https://www.flaticon.com/free-icons/hippo">Hippo icon created by Triberion - Flaticon</a></p>
 </footer>
