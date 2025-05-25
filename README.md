@@ -1,48 +1,21 @@
-# Astro Starter Kit: Basics
+# Emptygold
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+<a href="https://emptygold.blog/"><img src="https://emptygold.blog/favicon.png" alt="A golden hippo" width="128" height="128" align="right"></a>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Emptygold is a "nocial notwork" blog that I use as a replacement for regular social media. It's an outlet for when I don't want to be part of the toxic sludge of a modern social media timeline. No reach, no recommendation algorithms, just HTML, CSS, and JS.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Why "Emptygold"?
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+[I wrote about that here.](https://lukealexdavis.co.uk/posts/emptygold-blogger/)
 
-## 🚀 Project Structure
+## Why a hippo?
 
-Inside of your Astro project, you'll see the following folders and files:
+Because I love hippos.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## About the site
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+This site is set to noindex as I don't want it to be indexed by any search engines. I also have blocked several AI bots in my robots.txt file (for what use that is; better than nothing I guess?) Emptygold is accessible on the Web but this is still a relatively personal project only made for me and whomever I want to see it.
 
-## 🧞 Commands
+With that said, I'd appreciate it if you didn't pass on links of any pages to anyone else.
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+[Built with Astro](https://astro.build/)
