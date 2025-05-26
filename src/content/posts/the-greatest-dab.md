@@ -6,6 +6,7 @@ tags:
   - "football"
   - "paul pogba"
   - "images"
+  - sport
 ---
 
 <figure>
