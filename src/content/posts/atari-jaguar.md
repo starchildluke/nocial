@@ -1,6 +1,5 @@
 ---
 title: Atari Jaguar
-description: 
 pubDate: 26 May 2025 16:40
 tags:
   - gaming
