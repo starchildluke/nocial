@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import FormattedDate from '../components/FormattedDate.astro';
 import Pagination from '../components/Pagination.astro';
+import Tags from '../components/Tags.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths({paginate}) {
@@ -20,13 +20,7 @@ const { page } = Astro.props;
 
 <Layout title="Emptygold" description="Blogging—it's a personal thing.">
 	    <main>
-	    	{page.data.map((post) => (
-	    	      <div class="post">
-	    	      	<Fragment set:html={post.rendered.html}/>
-	    	      <a href=`/posts/${post.id}/`><FormattedDate date={post.data.pubDate} /></a>
-	    	      <p class="tags">{(post.data.tags ? post.data.tags.flatMap((tag: string) => <span class="tag"><a href=`/tags/${tag}/`>#{tag}</a></span>) : "")}</p>
-	    	      </div>
-	    	    ))}
+	    	<Tags page={page} />
 	    </main>
 
 	    <Pagination page={page} />

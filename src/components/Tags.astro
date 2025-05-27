@@ -1,11 +1,28 @@
 ---
-import { type CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+import FormattedDate from '../components/FormattedDate.astro';
 
-export interface Props {
-	post: CollectionEntry<"posts">[];
+export async function getStaticPaths({paginate}) {
+  const allPosts = await getCollection('posts');
+  const sortedPosts = allPosts.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
+  return paginate(sortedPosts, { pageSize: 20 });
 }
 
-const { post } = Astro.props;
+export interface Props {
+	page: any;
+}
+
+const { page } = Astro.props;
 ---
 
-{post}
+{page.data.map(
+	(post) => (
+		<div class="post">
+			<Fragment set:html={post.rendered.html}/>
+			<a href=`/posts/${post.id}/`><FormattedDate date={post.data.pubDate} /></a>
+			<div class="tags">{(post.data.tags ? post.data.tags.flatMap((tag: string) => <span class="tag"><a href=`/tags/${tag}/`>#{tag}</a></span>) : "")}
+			</div>
+	    </div>
+	    )
+	)
+}

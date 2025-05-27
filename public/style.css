@@ -43,6 +43,10 @@ time, .tag {
 	font-family: monospace;
 }
 
+p {
+	font-size: 1.1rem;
+}
+
 a {
 	color: #BE3D2A;
 }
@@ -62,7 +66,7 @@ a:visited {
 }
 
 .tag {
-	margin-right: 1rem;
+	margin: 1.1rem 1rem 0 0;
 	padding: 0.125rem 0.5rem;
 	background: #b1bac9;
 	color: #404040;
