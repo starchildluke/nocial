@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Post from '../../components/Post.astro';
+import Video from '../../components/Video.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { type CollectionEntry, getCollection } from 'astro:content';
 
@@ -21,6 +22,7 @@ const { post } = Astro.props;
 <Post {post.data}>
   <h1>{post.data.title}</h1>
   <FormattedDate date={post.data.pubDate} />
-  <Fragment set:html={post.rendered.html}/>
+  {post.data.videoId ? <Video title={post.data.title}, videoId={post.data.videoId} /> : ""}
+  <Fragment set:html={post.rendered.html} />
   <div class="tags">{(post.data.tags ? post.data.tags.flatMap((tag: string) => <span class="tag"><a href=`/tags/${tag}/`>#{tag}</a></span>) : "")}</div>
 </Post>

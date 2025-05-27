@@ -1,0 +1,9 @@
+---
+import {YouTube} from 'astro-lazy-youtube-embed'
+
+const {title, videoId} = Astro.props;
+---
+
+<div class="yt-embed">
+	<YouTube title={title} videoId={videoId} />
+</div>
