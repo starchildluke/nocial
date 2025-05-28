@@ -16,4 +16,4 @@ tags:
 > 
 > I should have known better.
 > 
-> Seal—Whirlpool
+> —**Seal, Whirlpool (1991)**

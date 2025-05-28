@@ -104,3 +104,10 @@ footer p, footer a {
 footer a:visited {
 	color: white;
 }
+
+blockquote {
+	border-left: 10px solid #102E50;
+	padding-left: 1.5rem;
+	margin-left: 1rem;
+	font-style: italic;
+}

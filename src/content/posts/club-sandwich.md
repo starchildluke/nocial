@@ -2,7 +2,7 @@
 title: Club sandwich
 pubDate: 28 May 2025 12:26
 tags: 
-  - food and drink
+  - food
   - france
 ---
 
