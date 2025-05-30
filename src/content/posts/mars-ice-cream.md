@@ -7,6 +7,5 @@ tags:
   - "food"
   - "ice cream"
   - "nostalgia"
-  - "images"
   - "video"
 ---
