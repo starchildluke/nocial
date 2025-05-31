@@ -5,7 +5,7 @@ tags:
   - "2000s"
   - "london"
   - "nostalgia"
-  - "technology"
+  - "tech"
   - "images"
 ---
 
