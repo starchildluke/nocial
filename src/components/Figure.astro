@@ -1,0 +1,8 @@
+---
+const { href, src, alt, width, height, caption } = Astro.props;
+---
+
+<figure>
+  <a href={href}><img src={src} alt={alt} width={width} height={height} /></a>
+  <figcaption>{caption}</figcaption>
+</figure>
