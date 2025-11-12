@@ -27,6 +27,7 @@ body {
 .container {
 	display: flex;
 	margin: 2rem auto;
+	padding: 0 2rem;
 	max-width: 26.25rem;
 	align-content: center;
 	flex-direction: column;
