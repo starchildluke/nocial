@@ -1,6 +1,6 @@
 ---
 title: "Go off, Kevin!"
-pubDate: 2023-05-04
+pubDate: 04 May 2023
 tags: 
   - "twitter"
   - "memes"

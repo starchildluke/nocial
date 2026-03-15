@@ -1,6 +1,6 @@
 ---
 title: "This is how much I love hippos"
-pubDate: 2023-11-30
+pubDate: 30 Nov 2023
 videoId: mTTwcCVajAc
 tags: 
   - "hippos"

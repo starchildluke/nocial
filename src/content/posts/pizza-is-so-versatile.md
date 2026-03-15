@@ -1,6 +1,6 @@
 ---
 title: "Pizza is so versatile"
-pubDate: 2023-03-27
+pubDate: 27 Mar 2023
 tags: 
   - "cookie monster"
   - "pizza"

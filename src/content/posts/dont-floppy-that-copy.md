@@ -1,6 +1,6 @@
 ---
 title: "Don't floppy that copy!"
-pubDate: 2023-05-07
+pubDate: 07 May 2025
 videoId: 4udYSxuyszo
 tags: 
   - "2000s"

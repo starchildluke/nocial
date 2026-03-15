@@ -1,6 +1,6 @@
 ---
 title: "Times are hard"
-pubDate: 2023-11-30
+pubDate: 30 Nov 2023
 tags: 
   - "design"
   - "images"

@@ -1,6 +1,6 @@
 ---
 title: "IT'S NOT PROPER PIZZA ETIQUETTE!"
-pubDate: 2025-02-04
+pubDate: 04 Feb 2025
 videoId: sZpao3FgGLo
 tags: 
   - italians

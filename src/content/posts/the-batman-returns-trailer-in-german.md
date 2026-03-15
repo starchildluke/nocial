@@ -1,6 +1,6 @@
 ---
 title: "The Batman Returns trailer in German"
-pubDate: 2023-02-23
+pubDate: 23 Feb 2023
 videoId: kSCueVFlYqI
 tags: 
   - "batman returns"

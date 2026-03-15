@@ -1,6 +1,6 @@
 ---
 title: "One in a million"
-pubDate: 2023-01-14
+pubDate: 14 Jan 2023
 tags: 
   - "pokémon"
   - "personal"

@@ -1,6 +1,6 @@
 ---
 title: "Jaguar XJR-9 (1988)"
-pubDate: 2024-06-29
+pubDate: 29 Jun 2024
 categories: 
   - "images"
 tags: 

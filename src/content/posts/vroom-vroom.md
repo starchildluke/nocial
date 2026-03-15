@@ -1,6 +1,6 @@
 ---
 title: "Vroom vroom!"
-pubDate: 2024-07-30
+pubDate: 30 July 2024
 tags: 
   - "1990s"
   - "art"

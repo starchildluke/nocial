@@ -1,6 +1,6 @@
 ---
 title: "Psyduck and Slowpoke"
-pubDate: 2024-01-14
+pubDate: 14 Jan 2024
 tags: 
   - "childhood"
   - "nostalgia"

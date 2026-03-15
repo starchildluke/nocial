@@ -1,6 +1,6 @@
 ---
 title: "Top 10 stacks"
-pubDate: 2023-05-23
+pubDate: 23 May 2023
 tags: 
   - "lists"
 ---

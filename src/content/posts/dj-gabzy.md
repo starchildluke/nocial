@@ -1,6 +1,6 @@
 ---
 title: "DJ GABZY"
-pubDate: 2023-11-02
+pubDate: 02 Nov 2023
 tags: 
   - "black"
   - "images"

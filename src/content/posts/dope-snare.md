@@ -1,6 +1,6 @@
 ---
 title: "Dope snare"
-pubDate: 2023-01-1
+pubDate: 01 Jan 2023
 tags: 
   - "apple"
   - "music"

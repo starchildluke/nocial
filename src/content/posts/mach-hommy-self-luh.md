@@ -1,6 +1,6 @@
 ---
 title: "Mach Hommy – SELF LUH"
-pubDate: 2024-11-09
+pubDate: 09 Nov 2024
 videoId: 19CYb1pZGN4
 tags: 
   - "black"

@@ -1,6 +1,6 @@
 ---
 title: "Movies, Games and Videos"
-pubDate: 2023-03-25
+pubDate: 25 Mar 2023
 tags: 
   - "1990s"
   - "childhood"

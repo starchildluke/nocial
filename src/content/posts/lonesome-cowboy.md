@@ -1,6 +1,6 @@
 ---
 title: "Lonesome cowboy"
-pubDate: 2024-03-17
+pubDate: 17 Mar 2024
 tags: 
   - "charlie brown"
   - "comics"

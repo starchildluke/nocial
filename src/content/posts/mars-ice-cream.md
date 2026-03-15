@@ -1,6 +1,6 @@
 ---
 title: "Mars ice cream"
-pubDate: 2023-07-05
+pubDate: 05 Jul 2023
 videoId: tRgQtjtIres
 tags: 
   - "chocolate"

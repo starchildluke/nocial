@@ -11,10 +11,7 @@ const posts = defineCollection({
 		image: z.string().optional(),
 		videoId: z.string().optional(),
 		published: z.boolean().optional(),
-		pubDate: z
-			.string()
-			.or(z.date())
-			.transform((val) => new Date(val))
+		pubDate: z.string()
 	})
 });
 

@@ -1,6 +1,6 @@
 ---
 title: "PS2 startup towers"
-pubDate: 2023-03-19
+pubDate: 19 Mar 2023
 videoId: iq03Z0pzVSM
 tags: 
   - "playstation 2"

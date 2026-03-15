@@ -1,6 +1,6 @@
 ---
 title: "The greatest dab"
-pubDate: 2023-04-01
+pubDate: 01 Apr 2023
 tags: 
   - "black"
   - "football"

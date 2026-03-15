@@ -1,6 +1,6 @@
 ---
 title: "Nokia 7600"
-pubDate: 2023-04-10
+pubDate: 10 Apr 2023
 tags: 
   - "childhood"
   - "phones"

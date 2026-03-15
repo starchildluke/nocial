@@ -1,6 +1,6 @@
 ---
 title: "Jesus, take the dive"
-pubDate: 2023-04-09
+pubDate: 09 Apr 2023
 tags: 
   - "blue"
   - "jesus"

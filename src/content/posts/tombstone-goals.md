@@ -1,6 +1,6 @@
 ---
 title: "Tombstone goals"
-pubDate: 2024-03-13
+pubDate: 13 Mar 2024
 tags: 
   - "tumblr"
   - "images"

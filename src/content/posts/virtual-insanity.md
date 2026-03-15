@@ -1,6 +1,6 @@
 ---
 title: "Virtual Insanity"
-pubDate: 2023-03-03
+pubDate: 03 Mar 2023
 videoId: OeTFAiYbR9o
 tags: 
   - "dancing"

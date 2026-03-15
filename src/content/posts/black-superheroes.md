@@ -1,6 +1,6 @@
 ---
 title: "Black superheroes"
-pubDate: 2023-03-26
+pubDate: 26 Mar 2023
 tags: 
   - "black"
   - "superheroes"

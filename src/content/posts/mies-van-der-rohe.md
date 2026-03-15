@@ -1,6 +1,6 @@
 ---
 title: "Mies Van der Rohe"
-pubDate: 2023-03-25
+pubDate: 25 Mar 2023
 tags: 
   - "architecture"
   - "mies van der rohe"

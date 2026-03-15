@@ -1,6 +1,6 @@
 ---
 title: "Game Boy: Pikachu Edition"
-pubDate: 2023-02-26
+pubDate: 26 Feb 2023
 tags: 
   - "game boy"
   - "nintendo"

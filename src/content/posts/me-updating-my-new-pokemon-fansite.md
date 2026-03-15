@@ -1,6 +1,6 @@
 ---
 title: "Me updating my new Pokémon fansite"
-pubDate: 2023-08-25
+pubDate: 25 Aug 2023
 tags: 
   - "blogging"
   - "childhood"

@@ -1,6 +1,6 @@
 ---
 title: "Bad dong"
-pubDate: 2023-05-18
+pubDate: 18 May 2023
 videoId: gXHxPPYGo5A
 tags:
   - "memes"

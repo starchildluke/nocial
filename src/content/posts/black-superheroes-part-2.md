@@ -1,6 +1,6 @@
 ---
 title: "Black superheroes: part 2"
-pubDate: 2023-04-01
+pubDate: 01 Apr 2023
 tags: 
   - "black"
   - "superheroes"

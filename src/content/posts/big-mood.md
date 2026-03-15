@@ -1,6 +1,6 @@
 ---
 title: "Big mood"
-pubDate: 2023-01-23
+pubDate: 23 Jan 2023
 tags: 
   - "money"
   - "tweets"

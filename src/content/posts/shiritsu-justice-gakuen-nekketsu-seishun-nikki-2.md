@@ -1,6 +1,6 @@
 ---
 title: "Shiritsu Justice Gakuen: Nekketsu Seishun Nikki 2"
-pubDate: 2024-07-17
+pubDate: 17 July 2024
 tags: 
   - "images"
   - "capcom"

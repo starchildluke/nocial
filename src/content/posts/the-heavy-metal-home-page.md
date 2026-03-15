@@ -1,6 +1,6 @@
 ---
 title: "THE HEAVY METAL HOME PAGE"
-pubDate: 2024-06-25
+pubDate: 25 Jun 2024
 tags: 
   - "music"
   - "websites"

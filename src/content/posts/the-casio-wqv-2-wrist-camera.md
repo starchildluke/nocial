@@ -1,6 +1,6 @@
 ---
 title: "The Casio WQV 2 Wrist Camera"
-pubDate: 2024-09-17
+pubDate: 17 Sept 2024
 tags: 
   - "2000s"
   - "london"
