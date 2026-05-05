@@ -1,13 +1,6 @@
-@font-face {
-	font-family: Erode;
-	src: url("/fonts/Erode.woff2")
-		format("woff2");
-	font-weight: 400;
-	font-display: swap;
-}
-
 html, body {
   height: 100%;
+	letter-spacing: -0.2px;
 }
 
 img {
@@ -16,19 +9,29 @@ img {
 }
 
 body {
-	font-family: Erode;
+	font-family: Bitter, serif;
 	display: flex;
 	flex-direction: column;
 	margin: 0;
-	background: #F5C45E;
-	color: #102E50;
+	background: #102E50;
+	color: #e7e7e7;
+}
+
+aside {
+	max-width: 20rem;
+	width: 100%;
+}
+
+main {
+	display: flex;
+	gap: 2rem;
 }
 
 .container {
 	display: flex;
 	margin: 2rem auto;
-	padding: 0 2rem;
-	max-width: 26.25rem;
+	padding-inline: 2rem;
+	max-width: 60rem;
 	align-content: center;
 	flex-direction: column;
 	flex: 1 0 auto;
@@ -46,11 +49,12 @@ time, .tag {
 }
 
 p {
-	font-size: 1.1rem;
+	font-size: 0.9375rem;
+	line-height: 1.6;
 }
 
 a {
-	color: #BE3D2A;
+	color: #ffb70c;
 }
 
 a:hover {
@@ -58,11 +62,11 @@ a:hover {
 }
 
 a:visited {
-	color: #7B1781;
+	color: #ffe29d;
 }
 
 .post {
-	border-bottom: 1px dashed #102E50;
+	border-bottom: 1px dashed #34485e;
 	margin-bottom: 2rem;
 	padding-bottom: 2rem;
 }
@@ -75,17 +79,13 @@ a:visited {
 	border-radius: 9px;
 }
 
-.tag a {
-	color: #;
-}
-
 .tags {
 	display: flex;
   flex-wrap: wrap;
 }
 
 footer {
-	background: #102E50;
+	background: #ffb70c;
 	padding: 2rem;
 	flex-shrink: 0;
 }
@@ -96,11 +96,11 @@ footer {
 }
 
 footer p, footer a {
-	color: #F5C45E;
+	color: #102E50;
 }
 
 .tag a {
-	color: #222831;
+	color: #102E50;
 }
 
 footer a:visited {
@@ -108,7 +108,7 @@ footer a:visited {
 }
 
 blockquote {
-	border-left: 10px solid #102E50;
+	border-left: 10px solid #ffb70c;
 	padding-left: 1.5rem;
 	margin-left: 1rem;
 	font-style: italic;
@@ -117,4 +117,18 @@ blockquote {
 ::selection {
 	background: #102E50;
 	color: #F5C45E;
+}
+
+ul.tag-list {
+	padding-inline: 0;
+	list-style: none;
+}
+
+.tag-list li {
+	padding-block: 0.25rem;
+	border-bottom: 1px solid #34485e;
+}
+
+.tags-num {
+	color: #b7c0ca;
 }

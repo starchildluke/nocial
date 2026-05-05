@@ -16,6 +16,7 @@ export interface Props {
 const { page } = Astro.props;
 ---
 
+<div class="post-list">
 {page.data.map(
 	(post) => (
 		<div class="post">
@@ -28,3 +29,4 @@ const { page } = Astro.props;
 	    )
 	)
 }
+</div>

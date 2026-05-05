@@ -1,0 +1,27 @@
+---
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('posts');
+const filteredPosts = allPosts.map((post) => (
+	post.data.tags
+	)).flat();
+const processedTags: any = filteredPosts.reduce((acc, tag) => {
+	const value = acc[tag] || 0;
+	return {
+		...acc,
+		[tag]: value + 1
+	}
+}, {})
+const allTags: any = [...new Set(allPosts.map((post: any) => post.data.tags).flat())];
+const sortedTags = allTags.sort()
+---
+<aside>
+	<h2>Tags</h2>
+	<ul class="tag-list">
+  	{sortedTags.map((tag) =>
+  		<li>
+  			<a href=`/tags/${tag}/`>{tag}</a> <span class="tags-num">({processedTags[tag]})</span>
+  		</li>
+  	)}
+  </ul>
+</aside>

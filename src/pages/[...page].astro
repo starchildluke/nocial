@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Pagination from '../components/Pagination.astro';
+import Aside from '../components/Aside.astro';
 import Tags from '../components/Tags.astro';
 import { getCollection } from 'astro:content';
 
@@ -21,7 +22,9 @@ const { page } = Astro.props;
 <Layout title="Emptygold" description="Blogging—it's a personal thing.">
 	    <main>
 	    	<Tags page={page} />
+	    	<Aside />
 	    </main>
+	    
 
 	    <Pagination page={page} />
 	</Layout>
