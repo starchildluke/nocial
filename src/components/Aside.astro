@@ -20,7 +20,7 @@ const sortedTags = allTags.sort()
 	<ul class="tag-list">
   	{sortedTags.map((tag) =>
   		<li>
-  			<a href=`/tags/${tag}/`>{tag}</a> <span class="tags-num">({processedTags[tag]})</span>
+  			<a href=`/tags/${tag.toLowerCase().replaceAll(' ', '-')}/`>{tag}</a> <span class="tags-num">({processedTags[tag]})</span>
   		</li>
   	)}
   </ul>

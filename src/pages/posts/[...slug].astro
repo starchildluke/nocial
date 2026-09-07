@@ -24,5 +24,5 @@ const { post } = Astro.props;
   <FormattedDate date={post.data.pubDate} />
   {post.data.videoId ? <Video title={post.data.title}, videoId={post.data.videoId} /> : ""}
   <Fragment set:html={post.rendered.html} />
-  <div class="tags">{(post.data.tags ? post.data.tags.flatMap((tag: string) => <span class="tag"><a href=`/tags/${tag}/`>#{tag}</a></span>) : "")}</div>
+  <div class="tags">{(post.data.tags ? post.data.tags.flatMap((tag: string) => <span class="tag"><a href=`/tags/${tag.toLowerCase().replaceAll(' ', '-')}/`>#{tag}</a></span>) : "")}</div>
 </Post>

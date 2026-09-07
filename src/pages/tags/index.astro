@@ -24,7 +24,7 @@ const title = "Tag Index";
   <ul>
   	{sortedTags.map((tag) =>
   		<li>
-  			<a href=`/tags/${tag}/`>{tag}</a> ({processedTags[tag]})
+  			<a href=`/tags/${tag.toLowerCase().replaceAll(' ', '-')}/`>{tag}</a> ({processedTags[tag]})
   		</li>
   	)}
   </ul>
