@@ -13,7 +13,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
-	background: #102E50;
+	background: #071421;
 	color: #e7e7e7;
 }
 
@@ -96,11 +96,11 @@ footer {
 }
 
 footer p, footer a {
-	color: #102E50;
+	color: #071421;
 }
 
 .tag a {
-	color: #102E50;
+	color: #071421;
 }
 
 footer a:visited {
@@ -115,7 +115,7 @@ blockquote {
 }
 
 ::selection {
-	background: #102E50;
+	background: #071421;
 	color: #F5C45E;
 }
 
