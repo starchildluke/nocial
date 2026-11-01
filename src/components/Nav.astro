@@ -1,0 +1,13 @@
+---
+const allPages = Object.values(import.meta.glob('../pages/*.astro', { eager: true }))
+const realPagesOnly = allPages.filter(page => !page.url.includes("["));
+---
+<nav>
+	<ul>
+		<li><a href="/">Home</a></li>
+		{realPagesOnly.map((page) => (
+			<li><a href={page.url}>{page.url.replaceAll('/', '').replace(page.url[1], page.url[1].toUpperCase())}</a></li>
+			)
+		)}
+	</ul>
+</nav>
